@@ -185,7 +185,7 @@ class VideoPlayerMediaKit extends VideoPlayerPlatform {
           // print("init");
           durations[textureId] = event.inMicroseconds;
           streams[textureId]!.add(VideoEvent(
-            eventType: VideoEventType.initialized,
+            eventType: VideoEventType.durationUpdated,
             duration: players[textureId]!.state.duration,
             size: Size(players[textureId]!.state.width!.toDouble(),
                 players[textureId]!.state.height!.toDouble()),

@@ -42,7 +42,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-
+dependency_overrides:
+  video_player:
+    git:
+      url: https://github.com/zezo357/packages
+      path: ./packages/video_player/video_player
+      ref: update_duration
+  video_player_platform_interface:
+    git:
+      url: https://github.com/zezo357/packages
+      path: ./packages/video_player/video_player_platform_interface
+      ref: update_duration
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
